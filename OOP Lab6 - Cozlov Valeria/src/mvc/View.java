@@ -37,7 +37,7 @@ public class View implements ViewInter {
 
     @Override
     public void productsStatistics(double income, int es, int am, int cap, int lat) {
-        System.out.println("Month income: " + income);
+        System.out.println("This month's net income: " + income);
         System.out.println("Espresso " + es);
         System.out.println("Americano " + am);
         System.out.println("Cappuccino " + cap);
@@ -46,10 +46,11 @@ public class View implements ViewInter {
 
     @Override
     public void payments(double expendCoffee, double expendMilk, double expendVegMilk, double sum1, double sum2) {
-        System.out.println("Coffee price: " + expendCoffee);
+        System.out.println("Monthly expenses in the coffee shop: " );
+        System.out.println("Coffee beans price: " + expendCoffee);
         System.out.println("Milk price: " + expendMilk);
         System.out.println("Veg milk: " + expendVegMilk);
-        System.out.println("Total payment: " + sum1);
+        System.out.println("Total expenses: " + sum1);
         System.out.println("Staff salary: " + sum2);
     }
 
@@ -57,7 +58,7 @@ public class View implements ViewInter {
     public void monthStatus(int monthSum, int i) {
         System.out.println("++++++++++++++++++++++++++");
         System.out.println(i / 30 + ". Month");
-        System.out.println("The month total money: " + monthSum);
+        System.out.println("This month's brute income: " + monthSum);
     }
 
     @Override
@@ -67,7 +68,7 @@ public class View implements ViewInter {
 
     @Override
     public void daylyIncome(float med) {
-        System.out.println("The daily medium income: " + med);
+        System.out.println("The daily average income: " + med);
     }
 
     @Override
